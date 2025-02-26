@@ -29,10 +29,12 @@ struct Iterator
         return m_ptr;
     }
     Iterator& operator++() {
-        m_ptr++; return *this;
+        m_ptr++; 
+        return *this;
     }
     Iterator operator++(int) {
-        Iterator tmp = *this; ++(*this);
+        Iterator tmp = *this; 
+        ++(*this);
         return tmp;
     }
     friend bool operator== (const Iterator& a, const Iterator& b) {
