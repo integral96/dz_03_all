@@ -29,11 +29,11 @@ struct Iterator
         return m_ptr;
     }
     Iterator& operator++() {
-        m_ptr++; 
+        m_ptr++;
         return *this;
     }
     Iterator operator++(int) {
-        Iterator tmp = *this; 
+        Iterator tmp = *this;
         ++(*this);
         return tmp;
     }
