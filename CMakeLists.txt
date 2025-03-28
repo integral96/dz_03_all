@@ -10,7 +10,7 @@ project(dz_06 VERSION 0.0.${PATCH_NUM} LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(dz_06 main.cpp)
+add_executable(${PROJECT_NAME} main.cpp)
 
 install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION bin)
 
